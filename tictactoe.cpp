@@ -20,15 +20,11 @@ void display_board(){
 
 }
 void player_turn(){
-     int choice;
-
-
-     if(turn == 'X')
+    int choice;
+    if(turn == 'X')
     cout<<"\n\tPlayer1 [X] turn:";
-
     if(turn == 'O')
     cout<<"\n\tPlayer2 [O] turn:";
-
     cin>>choice;
     switch(choice){
         case 1: row=0; column=0;break;
@@ -74,6 +70,7 @@ bool gameover(){
     draw=true;
     return false;
 }
+
 main(){
    while(gameover()){
     display_board();
